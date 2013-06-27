@@ -204,7 +204,7 @@ function BenchmarkPassString()
 	local start_time = callbenchmark_getTicks()
 
 	for i=1, 10000000 do
-		callbenchmark_passString(1234.5)
+		callbenchmark_passString("Hello World")
 	end
 
 	local end_time = callbenchmark_getTicks()
@@ -227,7 +227,7 @@ function BenchmarkPassAndReturnString()
 	local start_time = callbenchmark_getTicks()
 
 	for i=1, 10000000 do
-		local val = callbenchmark_passAndReturnString(1234.5)
+		local val = callbenchmark_passAndReturnString("Hello World")
 	end
 
 	local end_time = callbenchmark_getTicks()
@@ -251,7 +251,7 @@ function BenchmarkPass2String()
 	local start_time = callbenchmark_getTicks()
 
 	for i=1, 10000000 do
-		callbenchmark_pass2String(1234.5, 1.0)
+		callbenchmark_pass2String("Hello", "World")
 	end
 
 	local end_time = callbenchmark_getTicks()
